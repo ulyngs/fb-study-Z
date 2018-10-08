@@ -1,0 +1,30 @@
+{
+// "update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+  "name": "Human Centered Computing, Oxford",
+  "description": "Facebook Study, Z",
+  "version": "1.5",
+  "permissions": [
+    "https://*.facebook.com/*",
+    "storage"
+   ],
+  "page_action": {
+    "default_icon" : "blank.png"
+    // "default_popup": "options.html"
+  },
+   // "options_page": "options.html",
+   "content_scripts": [
+    {
+      "matches": ["https://*.facebook.com/*"],
+      "run_at": "document_end",
+      "js": ["bundle.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["jquery-3.0.0.min.js", "background.js"],
+    "persistent": false
+  }
+  // "content_security_policy":"script-src 'self' https://api.wit.ai; object-src 'self'"
+
+}

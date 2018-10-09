@@ -1,6 +1,6 @@
 // set the intervention timing and study end time
 interventionStart = new Date('2018-10-29T09:00:00');
-interventionEnd = new Date('2018-11-10T09:00:00');
+interventionEnd = new Date('2018-11-12T09:00:00');
 studyEnd = new Date('2018-11-25T17:00:00');
 
 //this function wraps the entire code in bundle.js, then calls it if we're past the start time; also adds popup that we'll make changes

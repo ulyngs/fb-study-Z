@@ -1,5 +1,5 @@
 interventionStart = new Date('2018-10-29T08:00:00');
-interventionEnd = new Date('2018-11-10T08:00:00');
+interventionEnd = new Date('2018-11-12T08:00:00');
 studyEnd = new Date('2018-11-25T16:00:00');
 
 //wrap entire Focusbook code in this function and call it if we're past the study start
